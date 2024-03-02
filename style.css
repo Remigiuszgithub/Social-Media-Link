@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 8%);
+    height: 100vh;
+    font-size: 14px;
+}
+.social {
+    text-align: center;
+    background: hsl(0, 0%, 12%);
+    width: 30%;
+    height: 83%;
+    margin: 0;
+    border-radius: 10px;
+}
+.social img {
+    border-radius: 50%;
+    max-width: 25%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.social h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.social h2 {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.social p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button {
+    margin: 8px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 300px;
+    font-weight: 700;
+}
+.buttons button:hover {
+    background: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+@media only screen and (max-width: 1200px){
+    .buttons button {
+        max-width: 95%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .social {
+        width: 70%;
+        height: auto;
+    }
+}
